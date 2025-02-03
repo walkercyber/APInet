@@ -31,6 +31,7 @@ namespace APInet
             app.UseAuthorization();
 
 
+            //CRUD OPERATIONS
             //POST
             app.MapPost("/product", async (Products product) =>
             {
@@ -53,6 +54,7 @@ namespace APInet
                     return Results.NotFound($"Product with ID {id} not found");
                 return Results.Ok(product);
             });
+
 
             //UPDATE
             app.MapPut("products/{id}", async (Products productInput, string id) =>
