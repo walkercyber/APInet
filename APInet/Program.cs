@@ -55,7 +55,6 @@ namespace APInet
                 return Results.Ok(product);
             });
 
-
             //UPDATE
             app.MapPut("products/{id}", async (Products productInput, string id) =>
             {
