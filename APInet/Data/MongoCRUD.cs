@@ -11,7 +11,7 @@ namespace APInet.Data
 
         public MongoCRUD(string database)
         {
-            var client = new MongoClient();
+            var client = new MongoClient("");
             db = client.GetDatabase(database);
         }
 
