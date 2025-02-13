@@ -11,7 +11,7 @@ namespace APInet.Data
 
         public MongoCRUD(string database)
         {
-            var client = new MongoClient("");
+            var client = new MongoClient("mongodb+srv://Admin:admin@isabellasapi.wfmr9.mongodb.net/?retryWrites=true&w=majority&appName=IsabellasAPI");
             db = client.GetDatabase(database);
         }
 
